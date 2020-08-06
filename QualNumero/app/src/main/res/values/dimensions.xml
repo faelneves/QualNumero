@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="altura">60</dimen>
+    <dimen name="largura">20</dimen>
+    <dimen name="tamanho">10</dimen>
+    <dimen name="tamanho_2">5</dimen>
+</resources>

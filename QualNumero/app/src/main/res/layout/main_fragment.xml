@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <Button
+        android:id="@+id/palletCor"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/paleta"
+        android:onClick="openColorPicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewCentena"
+        android:layout_width="110dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mensagem" />
+
+    <TextView
+        android:id="@+id/centenaMid"
+        android:layout_width="70dp"
+        android:layout_height="12dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewCentena"
+        app:layout_constraintEnd_toEndOf="@+id/viewCentena"
+        app:layout_constraintStart_toStartOf="@+id/viewCentena"
+        app:layout_constraintTop_toTopOf="@+id/viewCentena" />
+
+    <TextView
+        android:id="@+id/centenaBot"
+        android:layout_width="70dp"
+        android:layout_height="12dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewCentena"
+        app:layout_constraintEnd_toEndOf="@+id/viewCentena"
+        app:layout_constraintStart_toStartOf="@+id/viewCentena" />
+
+    <TextView
+        android:id="@+id/centenaTopRight"
+        android:layout_width="12dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/viewCentena"
+        app:layout_constraintTop_toTopOf="@+id/viewCentena" />
+
+    <TextView
+        android:id="@+id/centenaBotRight"
+        android:layout_width="12dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewCentena"
+        app:layout_constraintEnd_toEndOf="@+id/viewCentena" />
+
+    <TextView
+        android:id="@+id/centenaTop"
+        android:layout_width="70dp"
+        android:layout_height="12dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/viewCentena"
+        app:layout_constraintStart_toStartOf="@+id/viewCentena"
+        app:layout_constraintTop_toTopOf="@+id/viewCentena" />
+
+    <TextView
+        android:id="@+id/centenaTopLeft"
+        android:layout_width="12dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/viewCentena"
+        app:layout_constraintTop_toTopOf="@+id/viewCentena" />
+
+    <TextView
+        android:id="@+id/centenaBotLeft"
+        android:layout_width="12dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewCentena"
+        app:layout_constraintStart_toStartOf="@+id/viewCentena" />
+
+    <View
+        android:id="@+id/viewDezena"
+        android:layout_width="110dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/viewUnidade"
+        app:layout_constraintStart_toEndOf="@+id/viewCentena"
+        app:layout_constraintTop_toBottomOf="@+id/mensagem" />
+
+    <TextView
+        android:id="@+id/dezenaMid"
+        android:layout_width="70dp"
+        android:layout_height="12dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewDezena"
+        app:layout_constraintEnd_toEndOf="@+id/viewDezena"
+        app:layout_constraintStart_toStartOf="@+id/viewDezena"
+        app:layout_constraintTop_toTopOf="@+id/viewDezena" />
+
+    <TextView
+        android:id="@+id/dezenaBot"
+        android:layout_width="70dp"
+        android:layout_height="12dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewDezena"
+        app:layout_constraintEnd_toEndOf="@+id/viewDezena"
+        app:layout_constraintStart_toStartOf="@+id/viewDezena" />
+
+    <TextView
+        android:id="@+id/dezenaTopRight"
+        android:layout_width="12dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/viewDezena"
+        app:layout_constraintTop_toTopOf="@+id/viewDezena" />
+
+    <TextView
+        android:id="@+id/dezenaBotRight"
+        android:layout_width="12dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewDezena"
+        app:layout_constraintEnd_toEndOf="@+id/viewDezena" />
+
+    <TextView
+        android:id="@+id/dezenaTop"
+        android:layout_width="70dp"
+        android:layout_height="12dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/viewDezena"
+        app:layout_constraintStart_toStartOf="@+id/viewDezena"
+        app:layout_constraintTop_toTopOf="@+id/viewDezena" />
+
+    <TextView
+        android:id="@+id/dezenaTopLeft"
+        android:layout_width="12dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/viewDezena"
+        app:layout_constraintTop_toTopOf="@+id/viewDezena" />
+
+    <TextView
+        android:id="@+id/dezenaBotLeft"
+        android:layout_width="12dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewDezena"
+        app:layout_constraintStart_toStartOf="@+id/viewDezena" />
+
+    <View
+        android:id="@+id/viewUnidade"
+        android:layout_width="110dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mensagem" />
+
+    <TextView
+        android:id="@+id/unidadeMid"
+        android:layout_width="70dp"
+        android:layout_height="12dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewUnidade"
+        app:layout_constraintEnd_toEndOf="@+id/viewUnidade"
+        app:layout_constraintStart_toStartOf="@+id/viewUnidade"
+        app:layout_constraintTop_toTopOf="@+id/viewUnidade" />
+
+    <TextView
+        android:id="@+id/unidadeBot"
+        android:layout_width="70dp"
+        android:layout_height="12dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewUnidade"
+        app:layout_constraintEnd_toEndOf="@+id/viewUnidade"
+        app:layout_constraintStart_toStartOf="@+id/viewUnidade" />
+
+    <TextView
+        android:id="@+id/unidadeTopRight"
+        android:layout_width="12dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/viewUnidade"
+        app:layout_constraintTop_toTopOf="@+id/viewUnidade" />
+
+    <TextView
+        android:id="@+id/unidadeBotRight"
+        android:layout_width="12dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewUnidade"
+        app:layout_constraintEnd_toEndOf="@+id/viewUnidade" />
+
+    <TextView
+        android:id="@+id/unidadeTop"
+        android:layout_width="70dp"
+        android:layout_height="12dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/viewUnidade"
+        app:layout_constraintStart_toStartOf="@+id/viewUnidade"
+        app:layout_constraintTop_toTopOf="@+id/viewUnidade" />
+
+    <TextView
+        android:id="@+id/unidadeTopLeft"
+        android:layout_width="12dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/viewUnidade"
+        app:layout_constraintTop_toTopOf="@+id/viewUnidade" />
+
+    <TextView
+        android:id="@+id/unidadeBotLeft"
+        android:layout_width="12dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/colorLed"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewUnidade"
+        app:layout_constraintStart_toStartOf="@+id/viewUnidade" />
+
+    <EditText
+        android:id="@+id/palpite"
+        android:layout_width="203dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="28dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/digite_o_palpite"
+        android:inputType="number"
+        android:maxLength="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/enviar_btn"
+        android:layout_width="96dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="envia"
+        android:text="@string/enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/mensagem"
+        android:layout_width="159dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="136dp"
+        android:text="@string/mensagem"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/novaPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:onClick="reiniciaPartida"
+        android:text="Nova Partida"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/palpite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
